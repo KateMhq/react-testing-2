@@ -22,9 +22,9 @@ class App extends React.Component {
   }
 
   submitSearch(movieString){
-    fetch(`http://www.omdbapi.com/?s=${movieString}&apikey=2cda7206`)
+    return fetch(`http://www.omdbapi.com/?s=${movieString}&apikey=2cda7206`)
       .then(response => response.json())
-      .then(result => this.setState({movies: result.Search}));
+      .then(result => this.setState({movies:result.Search||[]}));
   }
 
   render(){

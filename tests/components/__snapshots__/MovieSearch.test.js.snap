@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`movie search function output matches the snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label
+    htmlFor="movie-search"
+  >
+    Search for a movie
+  </label>
+  <input
+    onChange={[Function]}
+    type="text"
+    value="snapshot test"
+  />
+</form>
+`;
